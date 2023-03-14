@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "SplineSans";
+  src: url("../assets/Spline_Sans/static/SplineSans-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SplineSans";
+  src: url("../assets/Spline_Sans_Mono/static/SplineSansMono-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  overflow: hidden;
+  touch-action: none;
+  font-family: SplineSans, sans-serif;
+}

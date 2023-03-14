@@ -1,0 +1,6 @@
+mongodbUrl: mongodb://localhost:27017 # or mongodb://mongo:27017 when deployed with docker-compose
+lnbits:
+    apiUrl: https://legend.lnbits.com
+    invoiceKey: <LNBITS API KEY>
+    webhook: <LNBITS WEBKOOK>
+maxFileSize_mb: 5000

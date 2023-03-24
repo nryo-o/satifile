@@ -4,7 +4,7 @@ import Api exposing (ApiEnv)
 import Browser exposing (UrlRequest(..))
 import Browser.Navigation as Nav exposing (Key)
 import Context exposing (runContext)
-import Element exposing (Element, alignBottom, centerX, centerY, column, el, fill, fillPortion, height, htmlAttribute, link, maximum, padding, pointer, px, row, spacing, width)
+import Element exposing (Element, alignBottom, centerX, centerY, column, el, fill, fillPortion, height, htmlAttribute, link, maximum, padding, paragraph, pointer, px, row, spacing, width)
 import Element.Background
 import Element.Border
 import Element.Events exposing (onClick)
@@ -423,7 +423,15 @@ view model =
 
                     Routes.ViewFile id ->
                         viewFileDownload model id
-        , el [ centerX ] <| Element.text "1sat/mb | 5gb max | beta"
+        , el [ centerX ]
+            (paragraph []
+                [ Element.text "1sat/mb | 5gb max | beta | "
+                , Element.link []
+                    { url = "https://github.com/nryo-o/satifile"
+                    , label = Element.text "repo"
+                    }
+                ]
+            )
         ]
 
 
